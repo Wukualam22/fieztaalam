@@ -22,10 +22,15 @@ class navbar extends HTMLElement {
             <button type="button" class="btn btn-primary">Login</button>
             <button type="button" class="btn btn-primary">Daftar</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-            `;
+
+        <div class="app-bar">
+        <div class="menu-btn" data-toggle="true">
+          <div>-</div>
+          <div>-</div>
+          <div>-</div>
+        </div>
+      </div>
+        `;
     }
 }
 customElements.define('na-bar', navbar);

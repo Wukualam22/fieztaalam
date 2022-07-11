@@ -24,7 +24,7 @@ na-bar {
 
 na-bar a h1 {
     color: white;
-    font-size: 30px;
+    font-size: 10px;
     font-weight: 400;
     display: flex;
     text-decoration: none;
@@ -41,7 +41,7 @@ na-bar li a {
     justify-content: space-between;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 10px;
     font-family: Poppins;
 }
 
@@ -71,7 +71,7 @@ na-bar button {
     border: none;
     border-radius: 5px;
     padding: 5px 20px;
-    font-size: 20px;
+    font-size: 10px;
     font-family: Poppins;
     font-weight: 400;
     cursor: pointer;
@@ -85,7 +85,7 @@ na-bar button:hover {
     color: black;
     border-radius: 5px;
     padding: 5px 20px;
-    font-size: 20px;
+    font-size: 10px;
     font-family: Poppins;
     font-weight: 400;
     cursor: pointer;
@@ -93,84 +93,67 @@ na-bar button:hover {
     display: inline-flex;
 }
 
+na-bar .app-bar {
+    background-color: red;
+    height: 50px;
+}
 
+na-bar .apa {
+    background-color: red;
+    height: 50px;
+}
 
-@media screen and (max-width: 800px) {
-    na-bar li a {
-        font-size: 16px;
+.menu-btn {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    -webkit-transform: skewY(-35deg);
+    transform: skewY(-35deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
 
-    }
+na-bar .menu-btn div {
+    background-color: #ECC45D;
+    width: 20px;
+    height: 5px;
+    margin-bottom: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
 
-    na-bar a h1 {
-        font-size: 16px;
-        display: grid;
-    }
+.menu-btn:hover {
+    background-color: #ECC45D;
+    -webkit-transform: skewY(0deg);
+    transform: skewY(0deg);
+}
 
-    na-bar button {
-        background-color: #6D8B74;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 20px;
-        font-size: 16px;
-        font-family: Poppins;
-        font-weight: 400;
-        cursor: pointer;
-        display: inline-flex;
-    }
+.menu-btn:hover div {
+    background-color: white;
+}
 
-    na-bar button:hover {
-        background-color: #6D8B74;
-        border: none;
-        color: black;
-        border-radius: 5px;
-        padding: 5px 20px;
-        font-size: 16px;
-        font-family: Poppins;
-        font-weight: 400;
-        cursor: pointer;
-        transition: 0.8s;
-        display: inline-flex;
-    }
+jumbo-tron {
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
-@media screen and (max-width: 600px) {
-    na-bar li a {
-        font-size: 12px;
-
-    }
-
-    na-bar a h1 {
-        font-size: 12px;
-        display: grid;
-    }
-    na-bar button {
-        background-color: #6D8B74;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 20px;
-        font-size: 0.5em;
-        font-family: Poppins;
-        font-weight: 400;
-        cursor: pointer;
-        display: inline-flex;
-    }
-
-    na-bar button:hover {
-        background-color: #6D8B74;
-        border: none;
-        color: black;
-        border-radius: 5px;
-        padding: 5px 20px;
-        font-size: 12px;
-        font-family: Poppins;
-        font-weight: 400;
-        cursor: pointer;
-        transition: 0.8s;
-        display: inline-flex;
-    }
-}
-
-body {
-    background-color: #EFEAD8;
+footer {
+    background-color: #5F7161;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 10px;
 }
